@@ -25,26 +25,28 @@
             <p class="fs-2 text-dark fw-bold">Customize your Blue 24-inch iMac with Apple M1 chip.</p>
             <p class="fs-5 text-dark">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine</p>
 
-            <!-- memory -->
-            <p class="fs-6 fw-bold text-dark mt-3 mb-0">Memory</p>
-            <div class="d-flex">
-                <button id="8gb-memory" type="button" class="btn btn-outline-primary me-3">8GB Unified Memory</button>
-                <button id="16gb-memory" type="button" class="btn btn-outline-primary me-3">16GB Unified Memory</button>
-            </div>
+            <div id="buttons">
+                <!-- memory -->
+                <p class="fs-6 fw-bold text-dark mt-3 mb-0">Memory</p>
+                <div class="d-flex">
+                    <button id="8gb-memory" type="button" class="btn btn-outline-primary me-3">8GB Unified Memory</button>
+                    <button id="16gb-memory" type="button" class="btn btn-outline-primary me-3">16GB Unified Memory</button>
+                </div>
 
-            <!-- storage -->
-            <p class="fs-6 fw-bold text-dark mt-3 mb-0">Storage</p>
-            <div class="d-flex">
-                <button id="256gb-storage" type="button" class="btn btn-outline-primary me-3">256GB SSD storage</button>
-                <button id="512gb-storage" type="button" class="btn btn-outline-primary me-3">512GB SSD storage</button>
-                <button id="1tb-storage" type="button" class="btn btn-outline-primary me-3">1TB SSD storage</button>
-            </div>
+                <!-- storage -->
+                <p class="fs-6 fw-bold text-dark mt-3 mb-0">Storage</p>
+                <div class="d-flex">
+                    <button id="256gb-storage" type="button" class="btn btn-outline-primary me-3">256GB SSD storage</button>
+                    <button id="512gb-storage" type="button" class="btn btn-outline-primary me-3">512GB SSD storage</button>
+                    <button id="1tb-storage" type="button" class="btn btn-outline-primary me-3">1TB SSD storage</button>
+                </div>
 
-            <!-- delivery -->
-            <p class="fs-6 fw-bold text-dark mt-3 mb-0">Choose your delivery option</p>
-            <div class="d-flex">
-                <button id="aug25" type="button" class="btn btn-outline-primary me-3">Friday, Aug 25 FREE Prime Delivery</button>
-                <button id="aug21" type="button" class="btn btn-outline-primary me-3">Friday, Aug 21 Delivery charge $20</button>
+                <!-- delivery -->
+                <p class="fs-6 fw-bold text-dark mt-3 mb-0">Choose your delivery option</p>
+                <div class="d-flex">
+                    <button id="aug25" type="button" class="btn btn-outline-primary me-3">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button id="aug21" type="button" class="btn btn-outline-primary me-3">Friday, Aug 21 Delivery charge $20</button>
+                </div>
             </div>
 
             <!-- price table -->
@@ -57,11 +59,11 @@
                     </div>
                     <div class="d-flex justify-content-between col-8">
                         <p class="fw-bold">Extra Memory cost</p>
-                        <p class="fw-bold">$<span id="extra-memory-cost">0</span></p>
+                        <p class="fw-bold">$<span id="extra-memory-price">0</span></p>
                     </div>
                     <div class="d-flex justify-content-between col-8">
                         <p class="fw-bold">Extra Storage Cost</p>
-                        <p class="fw-bold">$<span id="extra-storage-cost">0</span></p>
+                        <p class="fw-bold">$<span id="extra-storage-price">0</span></p>
                     </div>
                     <div class="d-flex justify-content-between col-8">
                         <p class="fw-bold">Delivery Charge</p>
@@ -70,7 +72,7 @@
                     <hr class="col-8 fw-bold">
                     <div class="d-flex justify-content-between col-8">
                         <p class="fw-bold">Total Price</p>
-                        <p class="fw-bold">$<span id="total-price">0</span></p>
+                        <p class="fw-bold">$<span id="total-price">1299</span></p>
                     </div>
                 </div>
             </div>
@@ -82,7 +84,7 @@
                     <input type="text" class="form-control" id="promo-code" placeholder="Enter Promo Code">
                 </div>
                 <div class="col-4">
-                    <button id="apply-promo-code-button" type="button" class="btn btn-danger me-3">Apply</button>
+                    <button id="apply-promo-code" type="button" class="btn btn-danger me-3">Apply</button>
                 </div>
             </form>
         </section>
@@ -91,7 +93,7 @@
     <!-- total price -->
     <footer class="container mx-auto ">
         <hr class="col-12">
-        <p class="fs-4 text-dark fw-bold text-center">Total: $<span id="total-price">1299</span></p>
+        <p class="fs-4 text-dark fw-bold text-center">Total: $<span id="total">1299</span></p>
     </footer>
 
     <!-- external js -->
